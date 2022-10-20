@@ -1,0 +1,169 @@
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git log
+commit 179c7963f11b5ae62703381a734c2be2a2eff2f6 (HEAD -> master)
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:42:06 2022 +0530
+
+    8
+
+commit 37b17e83f0c83d66e8d640f0b5c11771180acc92
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:28:30 2022 +0530
+
+    modified file
+
+commit 941a0d802738fb2aacd323eeb1c8777cd1e85113
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:23:44 2022 +0530
+
+    1
+
+commit 52dc71fce013f62c427743e88a9a4be3d05c4ebb
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:22:54 2022 +0530
+
+    6 7
+
+commit ce9b2e632380f27944a8acdbb62b7abcf42c6a78
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:08:19 2022 +0530
+
+    new files
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git reset --mixed 37b17e83f0c83d66e8d640f0b5c11771180acc92^C
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git reset --mixed 37b17e83f0c83d66e8d640f0b5c11771180acc92
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        8
+        9
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git add .
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   8
+        new file:   9
+
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git commit -m "8" 8
+[master 90090c7] 8
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 8
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   9
+
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git log
+commit 90090c7f221321c27974ed0489b2fa26bd2cce63 (HEAD -> master)
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:44:09 2022 +0530
+
+    8
+
+commit 37b17e83f0c83d66e8d640f0b5c11771180acc92
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:28:30 2022 +0530
+
+    modified file
+
+commit 941a0d802738fb2aacd323eeb1c8777cd1e85113
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:23:44 2022 +0530
+
+    1
+
+commit 52dc71fce013f62c427743e88a9a4be3d05c4ebb
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:22:54 2022 +0530
+
+    6 7
+
+commit ce9b2e632380f27944a8acdbb62b7abcf42c6a78
+Author: venky <venkyidf42@gmail.com>
+Date:   Fri Oct 21 03:08:19 2022 +0530
+
+    new files
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git reset --mixed 37b17e83f0c83d66e8d640f0b5c11771180acc92
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        8
+        9
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ LS
+1  2  3  4  5  6  7  8  9
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ git clone https://github.com/venkyidf/DEVOPSGIT.git
+Cloning into 'DEVOPSGIT'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ ls
+1  2  3  4  5  6  7  8  9  DEVOPSGIT/
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT (master)
+$ cd DEVOPSGIT/
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/DEVOPSGIT (main)
+$ ;S
+bash: syntax error near unexpected token `;'
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/DEVOPSGIT (main)
+$ LS
+README.md
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/DEVOPSGIT (main)
+$ touch venky
+
+VENKY@DESKTOP-A14NFSJ MINGW64 /e/DevOps GIT/GIT/DEVOPSGIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        venky
+
+nothing added to commit but untracked files present (use "git add" to track)
